@@ -3,7 +3,7 @@ name: Deploy Python App
 on:
   push:
     branches:
-      - feature/apurva # or your deployment branch
+      - main # or your deployment branch
 
 jobs:
   deploy:
