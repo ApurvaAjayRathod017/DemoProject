@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "DDLJ",
+        "year": 1995,
+        "director": "Aditya chopra",
+        "genre": "Romantic"
+    },
+    {
+        "id": 2,
+        "title": "Bahubali",
+        "year": 2015,
+        "director": "Rajamouli",
+        "genre": "Action"
+    },
+    {
+        "id": 3,
+        "title": "Inception",
+        "year": 2010,
+        "director": "Christopher Nolan",
+        "genre": "Sci-Fi"
+    }
+]

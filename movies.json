@@ -1,0 +1,27 @@
+import json
+import csv
+
+# Sample variable: list of movie dictionaries
+movies = [
+    {"title": "Inception", "year": 2010, "director": "Christopher Nolan", "genre": "Sci-Fi"},
+    {"title": "The Matrix", "year": 1999, "director": "Lana Wachowski", "genre": "Action"},
+    {"title": "Interstellar", "year": 2014, "director": "Christopher Nolan", "genre": "Sci-Fi"}
+]
+
+# Save as text file
+with open("movies.txt", "w") as txt_file:
+    for movie in movies:
+        txt_file.write(f"{movie}\n")
+
+# Save as CSV file
+with open("movies.csv", "w", newline="") as csv_file:
+    writer = csv.DictWriter(csv_file, fieldnames=["title", "year", "director", "genre"])
+    writer.writeheader()
+    writer.writerows(movies)
+
+# Save as JSON file
+with open("movies.json", "w") as json_file:
+    json.dump(movies, json_file, indent=4)
+
+print("Movies saved in text, CSV, and JSON formats.")
+``
